@@ -15,4 +15,23 @@ model organization {
   org_name      String  @db.VarChar(300)
   timezone      String  @db.VarChar(40)
   currency      String  @db.VarChar(40)
+  positions position[]
+}
+
+model position {
+  pos_id Int @id @default(autoincrement())
+  pos_name String @db.VarChar(40)
+  org organization @relation(fields: [org_id], references: [org_id])
+  org_id Int
+  staff_members staff[]
+}
+
+model staff {
+  staff_id Int @id @default(autoincrement())
+  fname String @db.VarChar(60)
+  lname String @db.VarChar(80)
+  email String @db.VarChar(150)
+  pay_rate Float @db.DoublePrecision
+  pos position @relation(fields: [pos_id], references: [pos_id])
+  pos_id Int
 }

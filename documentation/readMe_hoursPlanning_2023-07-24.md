@@ -24,10 +24,36 @@ skipped new ts config file, went with strict: true
 
 added full url from vercel into .env
 
-created test organization table in schema.prisma
+created test organization table in schema.prisma file
 ran command to initialize database - created table
 
 ```npx prisma db push```
 
-this worked as expected, table viewable in vercel under data tab
+this worked as expected, table viewable in vercel under storage tab
+
+## Initial Dev Session with Enjay 9/22/2023
+
+created basic placeholder folder and page structure
+
+created universal placeholder navbar
+
+started looking at prisma tables for next steps
+
+used resources at:
+
+https://www.prisma.io/docs/concepts/components/prisma-schema/relations
+
+... to set up primary/fk relationships. requires extra rows in both
+tables beyond what I'd intuitively expect just out of SQL experience.
+
+The side that gets the 'relation' line in the model is the one that holds
+the foreign key. (the 'many' side). Don't forget to add the extra ```<tableName>[]``` row in the table you're linking to (the 'one' side)
+
+Remember we can investigate our tables in the prisma studio mini application. Access this by running ``` npx prisma studio```
+
+Verified we created three tables out of our schema.prisma file.
+
+
+
+
 
