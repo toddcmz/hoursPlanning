@@ -53,7 +53,10 @@ Remember we can investigate our tables in the prisma studio mini application. Ac
 
 Verified we created three tables out of our schema.prisma file.
 
+Created a page for making a new organization to try to get new data
+into organizations model
 
+This will be done with an input form. Likely to change in the future, mostly for proof of concept for now.
 
 
 
