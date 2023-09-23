@@ -58,5 +58,12 @@ into organizations model
 
 This will be done with an input form. Likely to change in the future, mostly for proof of concept for now.
 
+Continued building input form for new org, made a number of small styling tweaks based on dojohelpdesk styles,
+altered navbar, added organization details summary, add new org, and add new org details routes/pages
 
+Worked on formatting for new org input data fields. Next step is to handle submit of form data to add
+data to prisma table for that org.
+
+With that done, we can move on to adding org details. will require some thought for actual implementation-
+logged in user is going to be associated with some org, and should only let you add data for that org.
 

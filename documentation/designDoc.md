@@ -47,9 +47,11 @@ Analysis and Output:
 | ---- | ---- | ----|
 |  | org_id | pk, int |
 |  | org_name | string |
-|  | logo | blob |
+|  | logo* | blob |
 |  | timezone | string |
 |  | currency | string |
+
+* note - no logo currently included in prisma schema 2023-09-23
 
 | User_Account | col | type |
 | ---- | ---- | ----|

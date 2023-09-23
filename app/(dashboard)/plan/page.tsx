@@ -1,4 +1,8 @@
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: "Plan/Ours | Plan Project Hours"
+}
 
 export default function Plan() {
   return (
